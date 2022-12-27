@@ -1,0 +1,153 @@
+.btn {
+    border: none;
+    outline: none;
+    padding-top: 6px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-size: 17px;
+}
+#myDIV{
+    display: grid;
+    justify-items: center;
+}
+.active, .btn:hover {
+    padding: 6px;
+    background-color: whitesmoke;
+    border: 2px white solid;
+    color: rgb(66, 20, 110);
+    border-radius: 20px;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+} 
+html{
+    scroll-behavior: smooth;
+} 
+main{
+    background-color: whitesmoke;
+}
+body{
+    background-color: whitesmoke;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.15;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(66, 20, 110);
+}
+nav{
+    height: 115px;
+    padding-top: 5px;
+    background-color: rgb(66, 20, 110);
+}   
+nav li{
+    display:inline-block;
+    padding-right:20px;
+    font-size: 17px;
+}   
+nav a{
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none; 
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.skip a{
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    color: white;
+}  
+.skip a:focus{
+    top: 20px;
+}  
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 1px;
+}   
+nav a:hover {
+    text-decoration: underline;
+}   
+.box{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 15px;
+    padding: 10px;
+}    
+.box p{
+    text-align: center;
+    margin: auto;
+}
+.box{
+    background-color: rgb(216, 216, 216);
+    grid-template-columns: auto;
+    border-radius: 5%;
+    justify-content: center;
+    margin: 15px;
+    padding: 5px;
+}
+.box img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px){
+    .box1{
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 15px;
+        padding: 10px;
+    } 
+    .box{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgb(216, 216, 216);
+        border-radius: 5%;
+        justify-content: center;
+    }   
+    .box img{
+        border-radius: 5%;
+    }
+    .box p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .box1{
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 15px;
+        padding: 10px;
+    } 
+    .box{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgb(216, 216, 216);
+        border-radius: 5%;
+        justify-content: center;
+        margin: 10px;
+        padding: 5px;
+    }   
+    .box img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box p{
+        text-align: center;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <nav>
+            <h2>Telehealth</h2>
+            <ul>
+                <li><a class= 'btn active' href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <h1>Patient Portal Home Page</h1>
+    </header>  
+    <main class="container" id = "main" tabindex="0">
+        <div class="box1">
+            <div class="box">
+                <img src="images/requestAppointment.png" width = "200" alt="Request-Appointment-Img">
+                <p>Request an Appointment</p>
+            </div>
+            <div class="box">
+                <img src="images/textbox.png" width = "200" alt="Text-Box-Img">
+                <p>Read and Send Messages</p>
+            </div>
+            <div class="box">
+                <img src="images/upload.png" width = "200" alt="Upload-Img">
+                <p>Upload Files</p>
+            </div>
+            <div class="box">
+                <img src="images/calendar.png" width = "200" alt="Calendar-Img">
+                <p>View Upcoming and Previous Appointments</p>
+            </div>
+            <div class="box">
+                <img src="images/paper.png" width = "200" alt="Text-Box-Img">
+                <p>View Electronic medical Record</p>
+            </div>
+            <div class="box">
+                <img src="images/settings.png" width = "200" alt="Settings-Img">
+                <p>Manage Settings</p>
+            </div>
+        </div>
+    <footer>
+        <p>Sling Health - University of Michigan<br/>
+        &copy;Telehealth Title Here</p>
+    </footer>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+    </script>
+</body>
+</html>
