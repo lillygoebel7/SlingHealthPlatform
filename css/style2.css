@@ -48,9 +48,6 @@ nav li{
     padding-right:20px;
     font-size: 17px;
 }   
-/* ul{
-    justify-content:end;
-} */
 nav a{
     color: whitesmoke;
     font-weight: bold;
@@ -73,66 +70,79 @@ footer{
     text-align: center;
     padding-bottom: 1px;
 }   
+.statement{
+    text-align: center;
+    font-size: larger;
+}
 nav a:hover {
     text-decoration: underline;
 }   
-.box{
+.teamMember{
     display: grid;
     column-gap: 20px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     row-gap: 15px;
     padding: 10px;
-}    
-.box p{
+    border-radius: 5%;
+}
+.teamMember h3{
+    color:rgb(66, 20, 110);
     text-align: center;
     margin: auto;
 }
-.box{
+.teamMember p{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.teamMember{
     background-color: rgb(216, 216, 216);
     grid-template-columns: auto;
-    border-radius: 5%;
     justify-content: center;
     margin: 15px;
     padding: 5px;
 }
-.box img{
+.teamMember img{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
+    border-radius: 10%;
+    padding: 10px;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1500px){
-    .box1{
+    .team{
         display: grid;
         column-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 15px;
         padding: 10px;
     } 
-    .box{
+    .teamMember{
         display: grid;
         grid-template-columns: auto;
         background-color: rgb(216, 216, 216);
         border-radius: 5%;
         justify-content: center;
     }   
-    .box img{
+    .teamMember img{
         border-radius: 5%;
     }
-    .box p{
+    .teamMember p{
         text-align: center;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .box1{
+    .team{
         display: grid;
         column-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 15px;
         padding: 10px;
     } 
-    .box{
+    .teamMember{
         display: grid;
         grid-template-columns: auto;
         background-color: rgb(216, 216, 216);
@@ -141,16 +151,11 @@ nav a:hover {
         margin: 10px;
         padding: 5px;
     }   
-    .box img{
+    .teamMember img{
         margin-left: auto;
         margin-right: auto;
     }
-    .box p{
+    .teamMember p{
         text-align: center;
     }
 }
-
-
-
-
-
